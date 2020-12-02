@@ -174,6 +174,12 @@ def player_stats(player_n)
         has['assists'] = player[:assists]
         has['blocks'] = player[:blocks]
         has['player_name'] = player[:player_name]
+        has['blocks'] = player[:blocks]
+        has['number'] = player[:number]
+        has['rebounds'] = player[:rebounds]
+        has['slam_dunks'] = player[:slam_dunks]
+        has['steals'] = player[:steals]
+        has['shoe'] = player[:shoe]
       end
     end
   end
