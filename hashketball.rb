@@ -166,15 +166,7 @@ def team_names
   game_hash.map {|k,v| v[:team_name]}
 end
 
-def player_stats(name)
-   game_hash.each do |location, team_data|
-      team_data[:players].each do |player_name, value|
-         if player_name == name
-            return value
-         end
-      end
-   end
-end
+
 
 
 def big_shoe_rebounds
