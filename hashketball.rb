@@ -166,7 +166,15 @@ def team_names
   game_hash.map {|k,v| v[:team_name]}
 end
 
-
+def player_stats(player_n)
+  game_hash.each do |home_away, keys|
+    keys[:players].each do |player|
+      if player[:player_name] == player_n
+        return player[:player_name]
+      end
+    end
+  end
+end
 
 
 def big_shoe_rebounds
