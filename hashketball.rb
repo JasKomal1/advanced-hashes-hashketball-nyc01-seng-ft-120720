@@ -171,16 +171,16 @@ def player_stats(player_n)
   game_hash.each do |home_away, keys|
     keys[:players].each do |player|
       if player[:player_name] == player_n
-        has['assists'] = player[:assists]
-        has['blocks'] = player[:blocks]
-        has['player_name'] = player[:player_name]
-        has['blocks'] = player[:blocks]
-        has['number'] = player[:number]
-        has['rebounds'] = player[:rebounds]
-        has['slam_dunks'] = player[:slam_dunks]
-        has['steals'] = player[:steals]
-        has['shoe'] = player[:shoe]
-        has['points'] = player[:points]
+        has[:assists] = player[:assists]
+        has[:blocks] = player[:blocks]
+        has[:player_name] = player[:player_name]
+        has[:blocks] = player[:blocks]
+        has[:number] = player[:number]
+        has[:rebounds] = player[:rebounds]
+        has[:slam_dunks] = player[:slam_dunks]
+        has[:steals] = player[:steals]
+        has[:shoe] = player[:shoe]
+        has[:points] = player[:points]
       end
     end
   end
