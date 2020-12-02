@@ -172,6 +172,7 @@ def player_stats(player_n)
     keys[:players].each do |player|
       if player[:player_name] == player_n
         has['assists'] = player[:assists]
+        has['blocks'] = player[:blocks]
       end
     end
   end
