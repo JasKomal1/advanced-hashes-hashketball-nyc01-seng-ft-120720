@@ -180,6 +180,7 @@ def player_stats(player_n)
         has['slam_dunks'] = player[:slam_dunks]
         has['steals'] = player[:steals]
         has['shoe'] = player[:shoe]
+        has['points'] = player[:points]
       end
     end
   end
